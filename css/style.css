@@ -1,0 +1,215 @@
+:root {
+    --orange: #e67e22;
+    --black: #333;
+    --light-color: #777;
+    --border: .1rem solid rgba(0, 0, 0, .2);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: lighter;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 7%;
+}
+
+.header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    margin-right: auto;
+}
+
+.header .logo span {
+    color: var(--orange);
+}
+
+/* Banner Section */
+.banner {
+    min-height: 80vh;
+    background: url(../img/fondo.webp) no-repeat;
+    background-size:cover;
+    background-position: top;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+}
+
+.banner .content {
+    text-align: center;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    max-width: 50rem;
+    opacity: 0.7;
+}
+
+.banner .content h3 {
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.banner .content p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* Posts Section */
+.container {
+    display: grid;
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.container .posts-container .post {
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border: var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-container .post .image {
+    height: 40rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container .posts-container .post .title {
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.container .posts-container .post .text {
+    color: var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
+.container .posts-container .links {
+    border-top: var(--border);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+}
+
+.container .posts-container .links a {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.container .posts-container .links a:hover {
+    color: var(--orange);
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .credit {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .credit span {
+    color: var(--orange);
+}
+
+.footer .follow {
+    padding: 1rem 0;
+}
+
+.footer .follow a {
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background: var(--black);
+    color: #fff;
+    margin: 0 .1rem;
+    text-align: center;
+}
+
+.footer .follow a:hover {
+    background: var(--orange);
+}
+
+
+/* Estilo para la lista de términos */
+#terms-list {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0;
+}
+
+/* Estilo para cada término en la lista */
+#terms-list li {
+    margin-bottom: 15px; /* Espacio entre los elementos */
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para los términos (negrita) */
+#terms-list li strong {
+    color: #2d87f0;
+    font-weight: bold;
+}
+
+/* Estilo para el texto de la definición */
+#terms-list li {
+    color: #555;
+}
+
+/* Estilo de hover para los elementos de la lista */
+#terms-list li:hover {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dicc{
+    font-size: 24px;
+    padding-bottom: 30px;
+}
